@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {//编译选项
+      "target": "ES2016", //配置编译目标代码的版本标准 指定es？
+      "module": "CommonJS", //配置编译目标使用的模块化标准 commonjs & es6
+      "lib": ["ES2016"], //指定环境
+      "outDir": "./dist", //表示编译结果输出到某个文件夹
+      "strictNullChecks": true,//表示更加严格的类型校验  null undefined不能在赋值给string number 等类型
+      "removeComments": true, //表示编译结果中去除注释
+      "noImplicitUseStrict": false, //表示编译结果不显示 use Strict  不配置编译后的文件第一行是 use strict
+      "esModuleInterop": true, //启用es模块化交互非es模块到处  在ts件中可以使用 import fs from ’fs‘ 这种写法而不用 import * as fs from 'fs'  或者 import {xxx} from 'fs'这样写了
+      "noEmitOnError": true, // 当错误是不生成编译结果
+      "moduleResolution": "Node"  //表示模块解析的策略  Classic 经典 Node  node解析模块
+    
+    },
+  "include": ["./src"], //表示要编译文件是那个文件夹下的内容  
+  //"files": ["./src/index.ts"], //表示指定文件编译
+
+}

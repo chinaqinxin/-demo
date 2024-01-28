@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "nodemon_watch_dev注释": "表示打开nodemon 观察 ( --watch src 表示只观察src下的) ts后缀的文件发生变化就执行ts-node 编译src/ts",
+    "nodemon_watch_dev": "nodemon --watch src -e ts --exec ts-node src/创建一副扑克牌.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.9"
+  }
+}
